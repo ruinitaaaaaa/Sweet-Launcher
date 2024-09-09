@@ -275,11 +275,6 @@ class Settings {
                 } else if (e.target.classList.contains('theme-btn-sombre')) {
                     setBackground(true);
                     theme = "dark";
-                    e.target.classList.add('active-theme');
-                } else if (e.target.classList.contains('theme-btn-clair')) {
-                    setBackground(false);
-                    theme = "light";
-                    e.target.classList.add('active-theme');
                 }
 
                 let configClient = await this.db.readData('configClient')
